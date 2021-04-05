@@ -14,7 +14,7 @@ function algoritmo(clientes, premium, economy){
         }
     }
 
-    let pre = 0; 
+    let pre = 0;
     let eco = 0;
 
     //pregunto que si las habitaciones premium estan en su totalidad ocupadas
@@ -25,13 +25,13 @@ function algoritmo(clientes, premium, economy){
         }else{
             eco = suma(menores, menores.length);
         }
-        
+
     }else{//pregunto si las habitaciones economy estan todas ocupadas
         if(menores.length < economy || menores.length == economy){
             pre = suma(mayores, mayores.length);
             eco = suma(menores, menores.length)
         }else{
-            const cal = premium - mayores.length; 
+            const cal = premium - mayores.length;
             pre = (suma(mayores, premium - cal)) + suma(menores, cal);
             menores.splice(menores.length - cal, cal);
             eco = suma(menores, economy);
