@@ -1,4 +1,4 @@
-const sumaHabitacionesOcupadas = require("../src/sumaHabitacionesOcupadas");
+const sumaHabitacionesOcupadas = require("./sumaHabitacionesOcupadas");
 const clientes = [23, 45, 155, 374, 22, 99, 100, 101, 115, 209];
 
 function comprobarSumaHabitacionesOcupadas(premium, economy, resultado) {
