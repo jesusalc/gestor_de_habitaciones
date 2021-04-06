@@ -1,4 +1,4 @@
-function algoritmo(clientes, premium, economy) {
+function sumaHabitacionesOcupadas(clientes, premium, economy) {
   clientes.sort();
   const mayores = [];
   const menores = [];
@@ -53,4 +53,4 @@ function suma(valores, cantidad) {
   return sum;
 }
 
-module.exports = algoritmo;
+module.exports = sumaHabitacionesOcupadas;
